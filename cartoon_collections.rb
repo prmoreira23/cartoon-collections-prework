@@ -28,8 +28,8 @@ end
 
 def find_the_cheese(arr)
     cheeses = ["cheddar", "gouda", "camembert"]
-    arr.find do |item|
-        return true if item == "cheese"
+    arr.each do |item|
+        cheeses.include? item
     end
     nil
 end
