@@ -23,12 +23,12 @@ end
 
 def long_planeteer_calls(calls)
     calls.any? {|call| return true if call.size > 4}
-    return false
+    false
 end
 
 def find_the_cheese(arr)
-        arr.find do |item|
-            return true if item == "cheese"
-        end
-        return nil
+    arr.find do |item|
+        return true if item == "cheese"
+    end
+    nil
 end
