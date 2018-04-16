@@ -21,6 +21,7 @@ def find_the_cheese# code an argument here
   cheese_types = ["cheddar", "gouda", "camembert"]
 end
 
-def long_planeteer_calls
-
+def long_planeteer_calls(calls)
+    calls.any? {|call| return true if call.size > 4}
+    return false
 end
