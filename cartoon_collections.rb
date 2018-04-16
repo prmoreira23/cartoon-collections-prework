@@ -27,6 +27,7 @@ def long_planeteer_calls(calls)
 end
 
 def find_the_cheese(arr)
+    cheeses = ["cheddar", "gouda", "camembert"]
     arr.find do |item|
         return true if item == "cheese"
     end
